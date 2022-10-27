@@ -1,11 +1,10 @@
 const express =  require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const func = require('./functions');
-const { Console } = require('console');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
