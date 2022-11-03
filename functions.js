@@ -14,6 +14,7 @@ async function getAllCharacters () {
     return data;
 }
 
+
 async function getCharacter (name) {
     let url = `https://www.breakingbadapi.com/api/characters?name=${name}`
     console.log(url);
