@@ -74,7 +74,7 @@ async function getCharacter (name) {
 
 
 async function getAllEpisodes () {
-    let url = `https://my-breaking-bad.herokuapp.com/api/episodes`
+    let url = `localhost:3000/api/episodes`
 
     const response = await fetch(url);
     const data = await response.json();
@@ -84,7 +84,7 @@ async function getAllEpisodes () {
     return episodesAllGlobal;
 }
 
-getAllEpisodes()
+//getAllEpisodes()
 
 async function getEpisodeById (id) {
     let url = `https://my-breaking-bad.herokuapp.com/api/episodes/${id}`
