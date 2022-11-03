@@ -84,7 +84,7 @@ async function getAllEpisodes () {
     return episodesAllGlobal;
 }
 
-//getAllEpisodes()
+getAllEpisodes()
 
 async function getEpisodeById (id) {
     let url = `https://my-breaking-bad.herokuapp.com/api/episodes/${id}`
