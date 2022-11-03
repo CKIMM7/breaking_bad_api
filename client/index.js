@@ -11,7 +11,7 @@ let episodeSingleGlobal;
 let quote;
 
 async function getAllCharacters () {
-    let url = `http://localhost:3000/api/characters`
+    let url = `https://my-breaking-bad.herokuapp.com/api/characters`
 
     const response = await fetch(url);
     const data = await response.json();
