@@ -59,7 +59,7 @@ function getAllCharactersDisplay () {
 
 
 async function getCharacter (name) {
-    let url = `http://localhost:3000/api/characters/${name}`
+    let url = `https://my-breaking-bad.herokuapp.com/api/characters/${name}`
 
     const response = await fetch(url);
     const data = await response.json();
@@ -74,7 +74,7 @@ async function getCharacter (name) {
 
 
 async function getAllEpisodes () {
-    let url = `http://localhost:3000/api/episodes`
+    let url = `https://my-breaking-bad.herokuapp.com/api/episodes`
 
     const response = await fetch(url);
     const data = await response.json();
@@ -87,7 +87,7 @@ async function getAllEpisodes () {
 //getAllEpisodes()
 
 async function getEpisodeById (id) {
-    let url = `http://localhost:3000/api/episodes/${id}`
+    let url = `https://my-breaking-bad.herokuapp.com/api/episodes/${id}`
 
     const response = await fetch(url);
     const data = await response.json();
@@ -100,7 +100,7 @@ async function getEpisodeById (id) {
 //getEpisodeById(1);
 
 async function getQuoteByAuthor (fname, lname) {
-    let url = `http://localhost:3000/api/quotes?fname=${fname}&lname=${lname}`
+    let url = `https://my-breaking-bad.herokuapp.com/api/quotes?fname=${fname}&lname=${lname}`
 
     const response = await fetch(url);
     const data = await response.json();
