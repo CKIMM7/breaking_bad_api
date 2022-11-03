@@ -1,4 +1,4 @@
-console.log('index.js')
+console.log('index.js!')
 
 const characterContainer = document.querySelector('.characters-container');
 const episodeContainer = document.querySelector('.episodes-container');
