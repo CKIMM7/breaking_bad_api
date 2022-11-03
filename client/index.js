@@ -11,7 +11,7 @@ let episodeSingleGlobal;
 let quote;
 
 async function getAllCharacters () {
-    let url = `localhost:3000/api/characters`
+    let url = `http://localhost:3000/api/characters`
 
     const response = await fetch(url);
     const data = await response.json();
